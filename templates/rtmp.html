@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="playercontainer1"></div>
+<br>
+<div id="playercontainer2"></div>
+<br>
+<div id="playercontainer3"></div>
+<script type="text/javascript" src="../static/js/cyberplayer.js"></script>
+<script type="text/javascript">
+    var player = cyberplayer("playercontainer1").setup({
+        width: 680,
+        height: 448,
+        file: "rtmp://127.0.0.1:1935/live/1",
+        autostart: true,
+        stretching: "uniform",
+        volume: 100,
+        controls: true,
+        rtmp: {
+            reconnecttime: 5, // rtmp直播的重连次数
+            bufferlength: 1 // 缓冲多少秒之后开始播放 默认1秒
+        },
+        ak: "gC4c68fZAyFKhKgjjFWIhyeNDC0V9x2n"
+    });
+
+    var player = cyberplayer("playercontainer2").setup({
+        width: 680,
+        height: 448,
+        file: "rtmp://127.0.0.1:1935/live/2",
+        autostart: true,
+        stretching: "uniform",
+        volume: 100,
+        controls: true,
+        rtmp: {
+            reconnecttime: 5, // rtmp直播的重连次数
+            bufferlength: 1 // 缓冲多少秒之后开始播放 默认1秒
+        },
+        ak: "gC4c68fZAyFKhKgjjFWIhyeNDC0V9x2n"
+    });
+
+    var player = cyberplayer("playercontainer3").setup({
+        width: 680,
+        height: 448,
+        file: "rtmp://127.0.0.1:1935/live/3",
+        autostart: true,
+        stretching: "uniform",
+        volume: 100,
+        controls: true,
+        rtmp: {
+            reconnecttime: 5, // rtmp直播的重连次数
+            bufferlength: 1 // 缓冲多少秒之后开始播放 默认1秒
+        },
+        ak: "gC4c68fZAyFKhKgjjFWIhyeNDC0V9x2n"
+    });
+</script>
+</body>
+</html>
